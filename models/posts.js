@@ -3,6 +3,12 @@ module.exports =  (sequelize, DataTypes) => {
     const Posts = sequelize.define('Posts', {
         titulo: {
             type: DataTypes.STRING
+        },
+        contenido: {
+            type: DataTypes.STRING
+        },
+        categoria: {
+            type: DataTypes.STRING
         }
     })
     return Posts;
