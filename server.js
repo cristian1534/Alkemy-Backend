@@ -3,10 +3,12 @@ const app = express();
 const db = require('./models');
 const PORT = process.env.PORT || 3000;
 const routes = require('./routes/routes');
+var bodyParser = require('body-parser')
 
 // use...
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
+app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.json())
+
 
 // router...
 app.use('/api', routes);

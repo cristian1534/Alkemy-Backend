@@ -9,7 +9,11 @@ module.exports =  (sequelize, DataTypes) => {
         },
         categoria: {
             type: DataTypes.STRING
+        },
+        imagen: {
+            type: DataTypes.BLOB('long')
         }
+        
     })
     return Posts;
 }
