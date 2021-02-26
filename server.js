@@ -5,7 +5,7 @@ const PORT = process.env.PORT || 3000;
 const routes = require('./routes/routes');
 var bodyParser = require('body-parser')
 
-// use...
+// use for data on Postman...
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 

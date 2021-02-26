@@ -2,6 +2,15 @@ const express = require('express');
 const router = express.Router();
 const db = require('../models');
 
+/*
+    Here I used this way to set up the routes,
+    and also could have used: async await and try - catch 
+    for handle errors...
+    I decided to create this routes ways directly, another 
+    way would be by controllers export methods and add them 
+    to the routes.
+*/
+
 // to all the posts...
 router.get('/all', (req, res) => {
          db.Posts.findAll().then( posts => res.send(posts))

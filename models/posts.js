@@ -1,16 +1,18 @@
 module.exports =  (sequelize, DataTypes) => {
-    // define name of the table...
+
+    // define schema of the table...
+
     const Posts = sequelize.define('Posts', {
-        titulo: {
+        title: {
             type: DataTypes.STRING
         },
-        contenido: {
+        content: {
             type: DataTypes.STRING
         },
-        categoria: {
+        category: {
             type: DataTypes.STRING
         },
-        imagen: {
+        image: {
             type: DataTypes.BLOB('long')
         }
         
